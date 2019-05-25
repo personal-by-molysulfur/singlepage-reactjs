@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import HeadContent from './components/HeadContent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{position:'absolute', zIndex:1, top:'300px', marginLeft:56}}>
+       <HeadContent
+      
+       />
+       </div>
+      <div style={{position:'absolute', width:'100%'}}>
+      <img 
+      className="fullimage"
+      height={'500px'}
+      src={process.env.PUBLIC_URL + 'images/cover-first.jpg'}
+     />
+      </div>
+      <div
+      style={{position:'relative', background:'black',width:'100%',height:300, top:500}}
+      ></div>
+     
+    
     </div>
   );
 }

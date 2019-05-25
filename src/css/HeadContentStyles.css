@@ -1,0 +1,36 @@
+.dividerStyle {
+    background-color : rgb(255, 255, 255)
+}
+
+.backgroundStyle {
+    flex:1;
+    background-color: rgb(42, 47, 51);
+    padding: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.headStyle  {
+    text-align: start;
+    color : rgb(255, 255, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 1;        /* fallback */
+    max-height: 2em;       /* fallback */
+}
+
+.content {
+    color : rgb(255, 255, 255);
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-height: 1.5;        /* fallback */
+    max-height: 4.5em;       /* fallback */
+    
+}
