@@ -7,7 +7,7 @@ const DetailsLeft = () =>{
         <div className="col col-sm-6"><Content />
         </div>    
         <img className="col col-sm-6 d-flex justify-content-center" 
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg" width="300" height="300" />
+            src={process.env.PUBLIC_URL + 'example-image.jpg'} width="300" height="300" />
         </div>
     )
 }

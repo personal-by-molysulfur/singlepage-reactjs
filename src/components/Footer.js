@@ -1,13 +1,15 @@
 import React from 'react';
-import Content from './Content';
 
 const Footer = () =>{
     return(
-        <div className="d-flex p-5">
-            <h3 className="flex-grow-1">Lorem Ipsum</h3>
-            <h4 className="">@copy licened</h4>
-            <hr />
-        </div>
+        <div>
+            <div className="d-flex">
+                <h4 className="flex-grow-1">Lorem Ipsum</h4>
+                <h5 className="">Ref. <a href="https://nicepage.com/Page/Preview/18138/Best-Design-Offices?device=desktop">
+                    This Web</a></h5>
+            </div>
+            <hr className="dividerStyle"/>  
+         </div>
     )
 }
 

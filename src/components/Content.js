@@ -6,12 +6,13 @@ class Content extends Component{
         return (
             <div>
                 <h3 className="col">
-                    The coolest workplaces
-                    offices in the world</h3>
+                    Lorem ipsum is placeholder text commonly
+                </h3>
                 <h5 className="col">
-                Best office design of group layout. Are coolest workplaces offices in the world. 
-                Architecture studio arquitectes life. Home office best design interior luxury offices. 
-                Office design ideas make work my home organization. Home office setup ideas offices in small furniture layout. Office interior design dreams house furniture cool interiors. Interior ideas decorating a home office of bamboo rod. Home office space ideas design small decorating. Bloc offices new york city office snapshots modern design
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </h5>
             </div>  
         );

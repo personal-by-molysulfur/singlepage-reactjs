@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HeadContent from './components/HeadContent';
+import ContentTitle from './components/ContentTitle';
 import Avatar from './components/Avatar';
 import Content from './components/Content';
 import Service from './components/Service';
@@ -8,6 +8,19 @@ import ContentCenter from './components/ContentCenter';
 import DetailsLeft from './components/DetailsLeft';
 import DetailsRight from './components/DetailsRight';
 import Footer from './components/Footer';
+import ImageColumns from './components/ImageColumns';
+
+const blackScreenStyle ={
+  backgroundColor: '#1c1f22',
+  padding: '56px',
+  color : 'white',
+}
+
+const whiteScreenStyle ={
+  backgroundColor: '#f5f8fa',
+  padding: '56px',
+  color : 'black'
+}
 
 function App() {
   return (
@@ -16,8 +29,8 @@ function App() {
         <div className="cover-first"></div>
         <div className="container-fluid">
           <div className=" row d-flex">
-            <div className="p-0 d-flex justify-content-center col head-title"><HeadContent></HeadContent></div>
-            <div className="col d-flex justify-content-center head-content" width="100%"><Avatar></Avatar></div>
+            <div className="d-flex justify-content-center col head-title"><ContentTitle /></div>
+            <div className="col d-flex justify-content-center head-content" width="100%"><Avatar /></div>
           </div>
           <div className="container">
             <div className="col col-sm-6">
@@ -29,17 +42,17 @@ function App() {
       <section className="mt-5 p-5">
           <Service />
       </section>
-      <section className="mt-5 p-5" style={{backgroundColor:'#f5f8fa'}}>
+      <section style={whiteScreenStyle}>
         <ContentCenter />
-        <Service />
+        <ImageColumns />
       </section>
-      <section className="p-5" style={{backgroundColor:'#1c1f22'}}>
+      <section style={blackScreenStyle}>
         <DetailsLeft />
       </section>
-      <section className="p-5" style={{backgroundColor:'#f5f8fa'}}>
+      <section style={whiteScreenStyle}>
         <DetailsRight />
       </section>
-      <section>
+      <section style={blackScreenStyle}>
         <Footer />
       </section>
     </div>

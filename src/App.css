@@ -1,5 +1,14 @@
+img{
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 .cover-first{
-  background-image: url('./images/cover-first.jpg');
+  background-image: url('./images/example-image.jpg');
   background-position: 50% 100%;
   object-fit: cover;
   display: block;
@@ -9,6 +18,10 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 500px;
+}
+
+.dividerStyle {
+  background-color : rgb(255, 255, 255)
 }
 
 .head-title{
