@@ -1,26 +1,25 @@
 import React from 'react';
 import './App.css';
 import HeadContent from './components/HeadContent';
+import Avatar from './components/Avatar';
 
 function App() {
   return (
     <div className="App">
-      <div style={{position:'absolute', zIndex:1, top:'300px', marginLeft:56}}>
-       <HeadContent
-      
-       />
-       </div>
-      <div style={{position:'absolute', width:'100%'}}>
-      <img 
-      className="fullimage"
-      height={'500px'}
-      src={process.env.PUBLIC_URL + 'images/cover-first.jpg'}
-     />
-      </div>
-      <div
-      style={{position:'relative', background:'black',width:'100%',height:300, top:500}}
-      ></div>
+      <section style={{top:-250}}>
+        <div className="cover-first"></div>
+        <div className="container-fluid">
+          <div className=" row d-flex">
+            <div className="p-0 d-flex justify-content-center col head-title"><HeadContent></HeadContent></div>
+            <div className="col d-flex justify-content-center head-content" width="100%"><Avatar></Avatar></div>
+          </div>
+          <div className=" row d-flex">
+            <p>asdasdasd</p>
+          </div>
+        </div>
+      </section>
      
+      <div style={{position:'relative', background:'black',width:'100%',height:300, top:500}} />
     
     </div>
   );

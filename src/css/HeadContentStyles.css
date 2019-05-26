@@ -3,7 +3,7 @@
 }
 
 .backgroundStyle {
-    flex:1;
+    width: 400px;
     background-color: rgb(42, 47, 51);
     padding: 56px;
     padding-left: 16px;
@@ -34,3 +34,13 @@
     max-height: 4.5em;       /* fallback */
     
 }
+
+@media only screen and (max-width: 768px) {
+    .backgroundStyle {
+        background-color: rgb(42, 47, 51);
+        padding: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+  }
+  
